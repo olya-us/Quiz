@@ -1,0 +1,21 @@
+{
+  "name": "Quiz_parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "Olya",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-recommended": "^4.0.0",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.20.3",
+    "stylelint": "^10.0.1",
+    "stylelint-config-recommended": "^2.2.0"
+  }
+}
