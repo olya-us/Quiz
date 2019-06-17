@@ -66,7 +66,29 @@ body {
 }
 
 #score {
+    margin: 150px;
     font-size: 40px;
     text-align: center;
     color: #bf4040;
+}
+
+#btnFade {
+    height: 50px;
+    width: 300px;
+    border-radius: 50px;
+    margin: 0 140px;
+    font-size: 30px;
+    border: 1px solid #1d3e6a;
+    background-color: #778897;
+    color: #fff;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 1500ms;
+}
+
+.hide {
+    opacity: 0;
+    transition: opacity 1500ms;
 }
