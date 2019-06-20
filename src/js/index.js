@@ -4,7 +4,6 @@ import {showScores} from './showScores';
 import {showProgress} from './showProgress';
 import '../styles/main.scss';
 
-
 const populate = () => {
   if (quiz.isEnded()) {
     showScores();
@@ -26,12 +25,16 @@ const guess = (id, guess) => {
   button.onclick = function() {
     quiz.guess(guess);
     populate();
-    localStorage.setItem(id, guess);
-    if (localStorage.getItem(id)) {
-    };
   };
 };
 
 export const quiz = new Quiz(questions);
+
+const Obj = JSON.stringify(questions);
+localStorage.setItem(quiz, Obj);
+// Преобразовываем строку, полученную с помощью метода
+// JSON.stringify() и сохранённую в localStorage обратно в объект
+const returnObj = JSON.parse(localStorage.getItem(quiz));
+console.log(returnObj);
 
 populate();
